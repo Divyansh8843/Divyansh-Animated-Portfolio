@@ -76,7 +76,7 @@ export const Technologies = {
     icon: <SiTensorflow className="text-[#FF6F00]" />,
     name: "Deep Learning",
   },
-  Express: { icon: <FaNodeJs className="text-[#47A248]" />, name: "Express" },
+  Express: { icon: <FaNodeJs className="text-[#FF6F00]" />, name: "Express" },
   Flask: { icon: <SiFlask className="text-[#000000]" />, name: "Flask" },
   Python: { icon: <SiPython className="text-[#3776AB]" />, name: "Python" },
   Tailwind: {
@@ -154,14 +154,14 @@ export const achievements = [
   {
     title: "Certification Courses",
     description:
-      "Maintained a 50-day streak on LeetCode by solving daily DSA challenges, demonstrating focus and dedication to continuous learning.",
+      "Completed certified courses in DSA and Web Development, sharpening problem-solving and coding skills. Blended logic with design to build efficient and responsive web solutions.",
     images: [achieve3, achieve4],
     badge: "https://cdn-icons-png.flaticon.com/512/1078/1078952.png",
   },
   {
     title: "Hackathons Certificate",
     description:
-      "Maintained a 50-day streak on LeetCode by solving daily DSA challenges, demonstrating focus and dedication to continuous learning.",
+      "Participated in college-level hackathons, building creative tech solutions within tight deadlines. Gained hands-on experience in teamwork, innovation, and full-stack development",
     badge: "https://cdn-icons-png.flaticon.com/512/7238/7238706.png",
     images: [achieve5, achieve6],
   },
