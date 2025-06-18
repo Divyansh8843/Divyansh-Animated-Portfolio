@@ -33,7 +33,7 @@ const cardVariants = {
     y: [0, -6, 0, 6, 0],
     transition: {
       repeat: Infinity,
-      duration: 5,
+      duration: 2,
       ease: "easeInOut"
     }
   }

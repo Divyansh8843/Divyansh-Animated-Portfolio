@@ -1,14 +1,14 @@
-'use client'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { BsArrowUpRight } from 'react-icons/bs'
-import { projects, Technologies } from '@/data'
+import { BsArrowUpRight } from "react-icons/bs";
+import { projects, Technologies } from "@/data";
 
-const DURATION = 22
+const DURATION = 22;
 
 export default function Projects() {
-  const allProjects = [...projects, ...projects]
+  const allProjects = [...projects, ...projects];
 
   return (
     <motion.section
@@ -25,12 +25,12 @@ export default function Projects() {
       <div className="relative w-full max-w-6xl overflow-hidden py-8">
         <motion.div
           className="flex gap-8"
-          style={{ width: 'max-content' }}
-          animate={{ x: ['0%', '-50%'] }}
+          style={{ width: "max-content" }}
+          animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            repeatType: 'loop',
-            ease: 'linear',
+            repeatType: "loop",
+            ease: "linear",
             duration: DURATION,
           }}
         >
@@ -44,7 +44,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-center transition-transform duration-500 group-hover:scale-110"
                   quality={90}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
@@ -55,7 +55,11 @@ export default function Projects() {
                   <motion.span
                     className="text-cyan-400"
                     animate={{ rotate: [0, -10, 10, 0] }}
-                    transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
+                    transition={{
+                      duration: 0.5,
+                      repeat: Infinity,
+                      repeatDelay: 3,
+                    }}
                   >
                     <BsArrowUpRight className="inline-block text-sm" />
                   </motion.span>
@@ -107,18 +111,6 @@ export default function Projects() {
         <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black via-transparent to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black via-transparent to-transparent z-10" />
       </div>
-
-      <div className="mt-6 flex gap-2 items-center text-cyan-400/60 text-sm font-medium">
-        <motion.span 
-          animate={{ x: [-5, 0, -5] }} 
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >←</motion.span>
-        Auto-scrolling carousel
-        <motion.span 
-          animate={{ x: [0, 5, 0] }} 
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >→</motion.span>
-      </div>
     </motion.section>
-  )
+  );
 }

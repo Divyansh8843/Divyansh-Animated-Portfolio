@@ -21,7 +21,8 @@ body {
   font-family: var(--font-sans);
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   position: relative;
 }
@@ -32,7 +33,6 @@ section {
   min-height: 100vh;
   isolation: isolate;
 }
-
 
 /* Z-index layering */
 .navbar-fixed {
@@ -62,26 +62,48 @@ section {
 
 /* Animation keyframes */
 @keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  25% { transform: translateY(-4px) rotate(1deg); }
-  75% { transform: translateY(4px) rotate(-1deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(4px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 @keyframes shine {
-  100% { transform: translateX(200%); }
+  100% {
+    transform: translateX(200%);
+  }
 }
 
 @keyframes loop {
@@ -92,7 +114,6 @@ section {
     transform: translateX(-50%);
   }
 }
-
 
 /* Logo float animation */
 .logo-float {
@@ -108,18 +129,14 @@ section {
 }
 
 .social-button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 9999px;
   padding: 2px;
   background: linear-gradient(45deg, #00b4d8, #0077b6);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -138,10 +155,10 @@ section {
 }
 
 .border-gradient-cyan {
-    border-image-slice: 1;
+  border-image-slice: 1;
   border-width: 4px;
-    border-image-source: linear-gradient(90deg, #06b6d4, #3b82f6);
- }
+  border-image-source: linear-gradient(90deg, #06b6d4, #3b82f6);
+}
 
 .loop-slider {
   .inner {
@@ -157,7 +174,13 @@ section {
 
 /* Add a smooth mask for the edges */
 .overflow-hidden {
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 
 /* Hide scrollbar but keep functionality */
@@ -166,11 +189,14 @@ section {
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-
-
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

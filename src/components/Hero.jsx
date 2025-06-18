@@ -79,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <img
-              src="/Divyansh.jpg"
+              src="/Divyansh.png"
               alt="Divyansh"
               className="w-full h-full object-cover"
               loading="lazy"
